@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "singularName": "property",
+    "pluralName": "properties",
+    "displayName": "Property",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "structureType": {
+      "type": "string"
+    },
+    "architectureType": {
+      "type": "string"
+    },
+    "bedroomCount": {
+      "type": "integer"
+    },
+    "bathroomCount": {
+      "type": "integer"
+    },
+    "squareFeet": {
+      "type": "integer"
+    },
+    "acreage": {
+      "type": "decimal"
+    },
+    "features": {
+      "type": "string"
+    },
+    "adCopy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ad-copy.ad-copy"
+    }
+  }
+}
