@@ -6,4 +6,42 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::property.property');
+const uid = 'api::property.property';
+const field = 'owner';
+
+const SetOwner = {
+	name: 'global::SetOwner',
+	config: {
+		field,
+		uid,
+	},
+};
+
+const IsOwner = {
+	name: 'global::IsOwner',
+	config: {
+		field,
+		uid,
+	},
+};
+
+module.exports = createCoreRouter(uid, {
+	config: {
+		create: {
+			middlewares: [SetOwner],
+		},
+		find: {
+			policies: [IsOwner],
+		},
+		findOne: {
+			policies: [IsOwner],
+		},
+		delete: {
+			policies: [IsOwner],
+		},
+		update: {
+			policies: [IsOwner],
+			middlewares: [SetOwner],
+		},
+	},
+});
