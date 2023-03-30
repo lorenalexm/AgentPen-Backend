@@ -17,30 +17,12 @@ const SetOwner = {
 	},
 };
 
-const IsOwner = {
-	name: 'global::IsOwner',
-	config: {
-		field,
-		uid,
-	},
-};
-
 module.exports = createCoreRouter(uid, {
 	config: {
 		create: {
 			middlewares: [SetOwner],
 		},
-		find: {
-			policies: [IsOwner],
-		},
-		findOne: {
-			policies: [IsOwner],
-		},
-		delete: {
-			policies: [IsOwner],
-		},
 		update: {
-			policies: [IsOwner],
 			middlewares: [SetOwner],
 		},
 	},
