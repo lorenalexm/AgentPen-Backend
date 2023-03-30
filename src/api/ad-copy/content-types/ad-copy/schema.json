@@ -4,10 +4,11 @@
   "info": {
     "singularName": "ad-copy",
     "pluralName": "ad-copies",
-    "displayName": "AdCopy"
+    "displayName": "AdCopy",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -19,6 +20,11 @@
     },
     "socialMedia": {
       "type": "richtext"
+    },
+    "property": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property.property"
     }
   }
 }
