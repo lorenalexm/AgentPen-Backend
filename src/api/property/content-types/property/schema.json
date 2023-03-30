@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "address": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "structureType": {
       "type": "string"
@@ -36,15 +37,11 @@
     "features": {
       "type": "string"
     },
-    "adCopy": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::ad-copy.ad-copy"
-    },
     "owner": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "properties"
     }
   }
 }

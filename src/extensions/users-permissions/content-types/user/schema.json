@@ -71,16 +71,17 @@
       "default": 0,
       "min": 0
     },
-    "properties": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::property.property"
-    },
     "firstName": {
       "type": "string"
     },
     "lastName": {
       "type": "string"
+    },
+    "properties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::property.property",
+      "mappedBy": "owner"
     }
   }
 }
