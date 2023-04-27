@@ -42,6 +42,11 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "properties"
+    },
+    "revisions": {
+      "type": "integer",
+      "default": 10,
+      "min": 0
     }
   }
 }

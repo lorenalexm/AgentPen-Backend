@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-04-10T23:26:50.946Z"
+    "x-generation-date": "2023-04-27T13:15:47.919Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -710,6 +710,9 @@
                               }
                             }
                           },
+                          "revisions": {
+                            "type": "integer"
+                          },
                           "createdAt": {
                             "type": "string",
                             "format": "date-time"
@@ -1392,6 +1395,9 @@
                                 }
                               }
                             }
+                          },
+                          "revisions": {
+                            "type": "integer"
                           },
                           "createdAt": {
                             "type": "string",
@@ -2109,6 +2115,9 @@
                               }
                             }
                           },
+                          "revisions": {
+                            "type": "integer"
+                          },
                           "createdAt": {
                             "type": "string",
                             "format": "date-time"
@@ -2792,6 +2801,9 @@
                               }
                             }
                           },
+                          "revisions": {
+                            "type": "integer"
+                          },
                           "createdAt": {
                             "type": "string",
                             "format": "date-time"
@@ -2943,6 +2955,9 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "revisions": {
+                "type": "integer"
               }
             }
           }
@@ -3504,6 +3519,9 @@
                                             }
                                           }
                                         },
+                                        "revisions": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -3600,6 +3618,9 @@
                     }
                   }
                 }
+              },
+              "revisions": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -4203,6 +4224,9 @@
                                             }
                                           }
                                         },
+                                        "revisions": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -4299,6 +4323,9 @@
                     }
                   }
                 }
+              },
+              "revisions": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -4935,6 +4962,9 @@
                                             }
                                           }
                                         },
+                                        "revisions": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -5031,6 +5061,9 @@
                     }
                   }
                 }
+              },
+              "revisions": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -5634,6 +5667,9 @@
                                             }
                                           }
                                         },
+                                        "revisions": {
+                                          "type": "integer"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -5730,6 +5766,9 @@
                     }
                   }
                 }
+              },
+              "revisions": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -12733,6 +12772,9 @@
                                                           }
                                                         }
                                                       },
+                                                      "revisions": {
+                                                        "type": "integer"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -13409,6 +13451,9 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "revisions": {
+                                                        "type": "integer"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -14120,6 +14165,9 @@
                                                           }
                                                         }
                                                       },
+                                                      "revisions": {
+                                                        "type": "integer"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -14797,6 +14845,9 @@
                                                           }
                                                         }
                                                       },
+                                                      "revisions": {
+                                                        "type": "integer"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -15245,6 +15296,9 @@
                                                                           }
                                                                         }
                                                                       }
+                                                                    },
+                                                                    "revisions": {
+                                                                      "type": "integer"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -15951,6 +16005,9 @@
                                                                           }
                                                                         }
                                                                       }
+                                                                    },
+                                                                    "revisions": {
+                                                                      "type": "integer"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -16691,6 +16748,9 @@
                                                                         }
                                                                       }
                                                                     },
+                                                                    "revisions": {
+                                                                      "type": "integer"
+                                                                    },
                                                                     "createdAt": {
                                                                       "type": "string",
                                                                       "format": "date-time"
@@ -17396,6 +17456,9 @@
                                                                           }
                                                                         }
                                                                       }
+                                                                    },
+                                                                    "revisions": {
+                                                                      "type": "integer"
                                                                     },
                                                                     "createdAt": {
                                                                       "type": "string",
@@ -18501,6 +18564,9 @@
                                                           }
                                                         }
                                                       },
+                                                      "revisions": {
+                                                        "type": "integer"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -19225,6 +19291,9 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "revisions": {
+                                                        "type": "integer"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -19984,6 +20053,9 @@
                                                           }
                                                         }
                                                       },
+                                                      "revisions": {
+                                                        "type": "integer"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -20708,6 +20780,9 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "revisions": {
+                                                        "type": "integer"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",

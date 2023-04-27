@@ -18,12 +18,9 @@ module.exports = ({ env }) => ({
 		config: {
 			provider: 'nodemailer',
 			providerOptions: {
-				host: env('SMTP_HOST'),
-				port: env('SMTP_PORT'),
-				auth: {
-					user: env('SMTP_USERNAME'),
-					pass: env('SMTP_PASSWORD')
-				}
+				host: 'localhost',
+				port: 1025,
+				ignoreTLS: true,
 			},
 			settings: {
 				defaultFrom: 'hello@agentpen.app',
