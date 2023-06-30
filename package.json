@@ -17,7 +17,7 @@
     "@strapi/strapi": "4.8.2",
     "better-sqlite3": "8.4.0",
     "pg": "^8.10.0",
-    "pg-connection-string": "^2.5.0",
+    "pg-connection-string": "^2.6.1",
     "strapi-plugin-random-sort": "^0.0.3",
     "strapi-plugin-transformer": "^3.1.0"
   },
