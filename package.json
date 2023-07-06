@@ -13,7 +13,7 @@
     "@strapi/plugin-documentation": "^4.11.3",
     "@strapi/plugin-i18n": "4.11.3",
     "@strapi/plugin-users-permissions": "4.11.3",
-    "@strapi/provider-email-nodemailer": "^4.11.3",
+    "@strapi/provider-email-nodemailer": "^4.11.4",
     "@strapi/strapi": "4.11.3",
     "better-sqlite3": "8.4.0",
     "pg": "^8.11.1",
