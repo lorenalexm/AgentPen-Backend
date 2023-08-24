@@ -12,9 +12,25 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "address": {
-      "type": "string",
-      "required": true
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "properties"
+    },
+    "generations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::generation.generation"
+    },
+    "streetAddress": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
     },
     "structureType": {
       "type": "string"
@@ -22,31 +38,38 @@
     "architectureType": {
       "type": "string"
     },
-    "bedroomCount": {
-      "type": "integer"
+    "bedrooms": {
+      "type": "decimal"
     },
-    "bathroomCount": {
-      "type": "integer"
+    "bathrooms": {
+      "type": "decimal"
     },
     "squareFeet": {
-      "type": "integer"
+      "type": "decimal"
     },
     "acreage": {
       "type": "decimal"
     },
-    "features": {
+    "propertyFeatures": {
+      "type": "text"
+    },
+    "communityAmenities": {
+      "type": "text"
+    },
+    "writingStyle": {
       "type": "string"
     },
-    "owner": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "properties"
+    "characterLimit": {
+      "type": "integer"
+    },
+    "socialHashtags": {
+      "type": "boolean"
+    },
+    "socialEmoji": {
+      "type": "boolean"
     },
     "revisions": {
-      "type": "integer",
-      "default": 10,
-      "min": 0
+      "type": "integer"
     }
   }
 }

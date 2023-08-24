@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "generations",
+  "info": {
+    "singularName": "generation",
+    "pluralName": "generations",
+    "displayName": "Generation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "property": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::property.property"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "content": {
+      "type": "text"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "detailed",
+        "socialMedia",
+        "videoIntro"
+      ]
+    }
+  }
+}

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * ad-copy controller
+ * generation controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::ad-copy.ad-copy');
+module.exports = createCoreController('api::generation.generation');

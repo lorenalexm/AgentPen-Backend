@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * ad-copy service
+ * generation service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::ad-copy.ad-copy');
+module.exports = createCoreService('api::generation.generation');
