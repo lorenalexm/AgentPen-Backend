@@ -6,4 +6,24 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::generation.generation');
+const uid = 'api::generation.generation';
+const field = 'owner';
+
+const SetOwner = {
+	name: 'global::SetOwner',
+	config: {
+		field,
+		uid,
+	},
+};
+
+module.exports = createCoreRouter(uid, {
+	config: {
+		create: {
+			middlewares: [SetOwner],
+		},
+		update: {
+			middlewares: [SetOwner],
+		},
+	},
+});
