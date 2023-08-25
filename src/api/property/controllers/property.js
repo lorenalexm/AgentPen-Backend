@@ -73,8 +73,6 @@ module.exports = createCoreController('api::property.property', ({ strapi }) => 
 			throw new NotFoundError("Unable to find the requested content!");
 		}
 
-		console.log(property);
-
 		if(property.owner.id == user.id) {
 			let deleted = await strapi.entityService.delete('api::property.property', id);
 			let sanitized = await this.sanitizeOutput(deleted, ctx);
