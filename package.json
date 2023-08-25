@@ -15,7 +15,7 @@
     "@strapi/plugin-users-permissions": "4.12.6",
     "@strapi/provider-email-nodemailer": "^4.12.5",
     "@strapi/strapi": "4.12.6",
-    "better-sqlite3": "8.5.0",
+    "better-sqlite3": "8.5.2",
     "pg": "^8.11.3",
     "pg-connection-string": "^2.6.2",
     "strapi-plugin-random-sort": "^0.0.3",
