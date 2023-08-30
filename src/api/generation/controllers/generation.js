@@ -13,7 +13,7 @@ module.exports = createCoreController('api::generation.generation', ({strapi}) =
 		const { meta } = await super.find(ctx, { populate: true });
 
 		var generations = await strapi.entityService.findMany('api::generation.generation', {
-			populate: ['owner', 'property']
+			populate: ['owner']
 		});
 
 		let filtered = generations.filter(generation => generation.owner.id == user.id);
@@ -30,7 +30,7 @@ module.exports = createCoreController('api::generation.generation', ({strapi}) =
 		const { id } = ctx.params;
 
 		var generation = await strapi.entityService.findOne('api::generation.generation', id, {
-			populate: ['owner', 'property']
+			populate: ['owner']
 		});
 		if(!generation) {
 			throw new NotFoundError("Unable to find the requested content!");
@@ -48,7 +48,7 @@ module.exports = createCoreController('api::generation.generation', ({strapi}) =
 		const { id } = ctx.params;
 
 		var generation = await strapi.entityService.findOne('api::generation.generation', id, {
-			populate: ['owner', 'property'],
+			populate: ['owner'],
 		});
 		if(!generation) {
 			throw new NotFoundError("Unable to find the requested content!");
@@ -67,7 +67,7 @@ module.exports = createCoreController('api::generation.generation', ({strapi}) =
 		const { id } = ctx.params;
 
 		var generation = await strapi.entityService.findOne('api::generation.generation', id, {
-			populate: ['owner', 'property']
+			populate: ['owner']
 		});
 		if(!generation) {
 			throw new NotFoundError("Unable to find the requested content!");

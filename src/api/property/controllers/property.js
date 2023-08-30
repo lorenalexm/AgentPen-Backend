@@ -13,7 +13,7 @@ module.exports = createCoreController('api::property.property', ({ strapi }) => 
 		const { meta } = await super.find(ctx, { populate: true });
 
 		var properties = await strapi.entityService.findMany('api::property.property', {
-			populate: ['owner']
+			populate: ['owner', 'generations']
 		});
 
 		let filtered = properties.filter(property => property.owner.id == user.id);
@@ -30,7 +30,7 @@ module.exports = createCoreController('api::property.property', ({ strapi }) => 
 		const { id } = ctx.params;
 
 		var property = await strapi.entityService.findOne('api::property.property', id, {
-			populate: ['owner']
+			populate: ['owner', 'generations']
 		});
 		if(!property) {
 			throw new NotFoundError("Unable to find the requested content!");
@@ -48,7 +48,7 @@ module.exports = createCoreController('api::property.property', ({ strapi }) => 
 		const { id } = ctx.params;
 
 		var property = await strapi.entityService.findOne('api::property.property', id, {
-			populate: ['owner'],
+			populate: ['owner', 'generations'],
 		});
 		if(!property) {
 			throw new NotFoundError("Unable to find the requested content!");
@@ -67,7 +67,7 @@ module.exports = createCoreController('api::property.property', ({ strapi }) => 
 		const { id } = ctx.params;
 
 		var property = await strapi.entityService.findOne('api::property.property', id, {
-			populate: ['owner']
+			populate: ['owner', 'generations']
 		});
 		if(!property) {
 			throw new NotFoundError("Unable to find the requested content!");
