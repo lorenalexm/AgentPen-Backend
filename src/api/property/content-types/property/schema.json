@@ -18,11 +18,6 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "properties"
     },
-    "generations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::generation.generation"
-    },
     "streetAddress": {
       "type": "string"
     },
@@ -70,6 +65,11 @@
     },
     "revisions": {
       "type": "integer"
+    },
+    "generations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::generation.generation"
     }
   }
 }

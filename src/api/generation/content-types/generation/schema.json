@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "property": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::property.property"
-    },
     "owner": {
       "type": "relation",
       "relation": "oneToOne",
