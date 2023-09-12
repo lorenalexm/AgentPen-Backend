@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@strapi/plugin-documentation": "^4.12.7",
-    "@strapi/plugin-i18n": "4.12.7",
+    "@strapi/plugin-i18n": "4.13.4",
     "@strapi/plugin-users-permissions": "4.12.7",
     "@strapi/provider-email-nodemailer": "^4.12.7",
     "@strapi/strapi": "4.12.7",
